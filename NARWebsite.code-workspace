@@ -1,0 +1,65 @@
+{
+  "folders": [
+    {
+      "name": "North Arrow Research Website",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "window.title": "North Arrow Research${separator}${activeEditorShort}${separator}${rootName}",
+    "editor.tabSize": 2,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+
+    "[mdx]": {
+      "editor.wordWrap": "bounded",
+      "editor.wordWrapColumn": 90
+    },
+
+    "files.associations": {
+      "*.mdx": "markdown"
+    },
+
+    "css.lint.validProperties": [
+      "composes"
+    ],
+
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/.cache/**": true,
+      "**/.docusaurus/**": true,
+      "**/build/**": true
+    },
+
+    "search.exclude": {
+      "**/node_modules/**": true,
+      "**/.cache/**": true,
+      "**/.docusaurus/**": true,
+      "**/build/**": true,
+      "**/dist/**": true
+    },
+
+    "files.exclude": {
+      "**/node_modules/**": true,
+      "**/.cache/**": true,
+      "**/.docusaurus/**": true
+    },
+
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#872175",
+
+    },
+
+    "markdownlint.config": {
+      "MD013": false
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "unifiedjs.vscode-mdx",
+      "streetsidesoftware.code-spell-checker",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode"
+    ]
+  }
+}

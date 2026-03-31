@@ -1,0 +1,76 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #0f5f7f;
+  --ifm-color-primary-dark: #0d5673;
+  --ifm-color-primary-darker: #0c516c;
+  --ifm-color-primary-darkest: #0a4359;
+  --ifm-color-primary-light: #11688b;
+  --ifm-color-primary-lighter: #126d93;
+  --ifm-color-primary-lightest: #1f81ab;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Open Sans', 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.96);
+  --ifm-navbar-link-color: #872175;
+  --ifm-footer-background-color: #efebe4;
+  --ifm-footer-link-color: #3d3b37;
+  --ifm-footer-title-color: #872175;
+  --ifm-font-color-base: #252423;
+}
+
+.navbar__link,
+.navbar__link:hover,
+.navbar__link--active {
+  color: #872175;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.navbar {
+  display: none !important;
+}
+
+.navbar__title {
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-size: 1.5rem;
+}
+
+.navbar__logo {
+  height: 2.1rem;
+}
+
+.footer {
+  border-top: 1px solid #ddd6ca;
+}
+
+.footer__title {
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-size: 1.35rem;
+  color: #872175;
+}
+
+.footer__copyright {
+  color: #5b5851;
+}
+
+.main-wrapper {
+  background: #ffffff;
+}
