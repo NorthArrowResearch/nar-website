@@ -1,7 +1,10 @@
 {
-  "name": "nar-website",
-  "version": "0.0.0",
+  "name": "@northarrowresearch/nar-website",
+  "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=24.0"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -27,7 +30,19 @@
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
-    "typescript": "~5.6.2"
+    "@typescript-eslint/eslint-plugin": "8.52.0",
+    "@typescript-eslint/parser": "8.52.0",
+    "eslint": "9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^3.7.4",
+    "typescript": "~5.9.3"
   },
   "browserslist": {
     "production": [
@@ -40,8 +55,5 @@
       "last 3 firefox version",
       "last 5 safari version"
     ]
-  },
-  "engines": {
-    "node": ">=20.0"
   }
 }

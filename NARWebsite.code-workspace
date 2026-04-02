@@ -9,7 +9,9 @@
     "window.title": "North Arrow Research${separator}${activeEditorShort}${separator}${rootName}",
     "editor.tabSize": 2,
     "terminal.integrated.defaultProfile.osx": "zsh",
-
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
     "[mdx]": {
       "editor.wordWrap": "bounded",
       "editor.wordWrapColumn": 90
@@ -48,10 +50,12 @@
       "titleBar.activeBackground": "#872175",
 
     },
-
     "markdownlint.config": {
-      "MD013": false
-    }
+      "MD013": false,
+      "MD033": {
+        "allowed_elements":["YouTubeEmbed","GoogleSlides"]
+      }
+    },
   },
   "extensions": {
     "recommendations": [

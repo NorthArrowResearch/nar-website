@@ -1,7 +1,7 @@
-import type {ReactNode} from 'react';
-import Layout from '@theme/Layout';
+import type { ReactNode } from 'react'
+import Layout from '@theme/Layout'
 
-import styles from './contact-us.module.css';
+import styles from './contact-us.module.css'
 
 export default function ContactPage(): ReactNode {
   return (
@@ -9,9 +9,7 @@ export default function ContactPage(): ReactNode {
       <main className={styles.page}>
         <div className="container">
           <h1 className={styles.title}>Contact Us</h1>
-          <p className={styles.details}>
-            info@northarrowresearch.com
-          </p>
+          <p className={styles.details}>info@northarrowresearch.com</p>
           <div className={styles.layout}>
             <section className={styles.card}>
               <form className={styles.form}>
@@ -51,5 +49,5 @@ export default function ContactPage(): ReactNode {
         </div>
       </main>
     </Layout>
-  );
+  )
 }

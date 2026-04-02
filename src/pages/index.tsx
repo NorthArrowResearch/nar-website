@@ -1,8 +1,8 @@
-import type {ReactNode} from 'react';
-import Link from '@docusaurus/Link';
-import Layout from '@theme/Layout';
+import type { ReactNode } from 'react'
+import Link from '@docusaurus/Link'
+import Layout from '@theme/Layout'
 
-import styles from './index.module.css';
+import styles from './index.module.css'
 
 const tools = [
   {
@@ -47,13 +47,11 @@ const tools = [
     description:
       'The Geomorphic Change Detection (GCD) is an ArcGIS AddIn or standalone software for quantifying the difference between raster datasets while taking uncertainty into account. Originally designed for differences in Digital Elevation Models (DEM) the GCD can measure change between any two raster datasets.',
   },
-];
+]
 
 export default function Home(): ReactNode {
   return (
-    <Layout
-      title="North Arrow Research"
-      description="Geospatial software for conservation.">
+    <Layout title="North Arrow Research" description="Geospatial software for conservation.">
       <main>
         <section className={styles.heroSection}>
           <div className={`container ${styles.heroContainer}`}>
@@ -61,23 +59,15 @@ export default function Home(): ReactNode {
               <Link to="/people" className={styles.heroTopLink}>
                 People
               </Link>
-              <Link
-                to="/contact-us"
-                className={`${styles.heroTopLink} ${styles.heroTopLinkContact}`}>
+              <Link to="/contact-us" className={`${styles.heroTopLink} ${styles.heroTopLinkContact}`}>
                 Contact Us
               </Link>
             </div>
             <div className={styles.heroGrid}>
               <div>
-                <img
-                  src="/img/nar-logo.svg"
-                  alt="North Arrow Research logo"
-                  className={styles.heroLogo}
-                />
+                <img src="/img/nar-logo.svg" alt="North Arrow Research logo" className={styles.heroLogo} />
                 <h1 className={styles.heroTitle}>North Arrow Research</h1>
-                <p className={styles.heroSubtitle}>
-                  Geospatial Software for conservation
-                </p>
+                <p className={styles.heroSubtitle}>Geospatial Software for conservation</p>
               </div>
             </div>
           </div>
@@ -85,18 +75,11 @@ export default function Home(): ReactNode {
 
         <section className={styles.toolsSection}>
           <div className="container">
-            <h2 className={`${styles.sectionTitle} ${styles.productsTitle}`}>
-              Our Products
-            </h2>
+            <h2 className={`${styles.sectionTitle} ${styles.productsTitle}`}>Our Products</h2>
             <div className={styles.toolsGrid}>
               {tools.map((tool) => (
                 <article key={tool.name} className={styles.toolCard}>
-                  <img
-                    src={tool.image}
-                    alt={tool.name}
-                    className={styles.toolImage}
-                    loading="lazy"
-                  />
+                  <img src={tool.image} alt={tool.name} className={styles.toolImage} loading="lazy" />
                   <h3>{tool.name}</h3>
                   <p>{tool.description}</p>
                   <Link href={tool.href} className={styles.learnMore}>
@@ -110,9 +93,7 @@ export default function Home(): ReactNode {
 
         <section className={styles.clientsSection}>
           <div className="container">
-            <h2 className={`${styles.sectionTitle} ${styles.clientsTitle}`}>
-              Our Clients
-            </h2>
+            <h2 className={`${styles.sectionTitle} ${styles.clientsTitle}`}>Our Clients</h2>
             <div className={styles.clientRibbons}>
               <img
                 src="/img/clients/logos1.png"
@@ -137,5 +118,5 @@ export default function Home(): ReactNode {
         </section>
       </main>
     </Layout>
-  );
+  )
 }

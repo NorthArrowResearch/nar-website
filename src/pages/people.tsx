@@ -1,8 +1,8 @@
-import type {ReactNode} from 'react';
-import Link from '@docusaurus/Link';
-import Layout from '@theme/Layout';
+import type { ReactNode } from 'react'
+import Link from '@docusaurus/Link'
+import Layout from '@theme/Layout'
 
-import styles from './people.module.css';
+import styles from './people.module.css'
 
 const team = [
   {
@@ -28,8 +28,8 @@ const team = [
     role: 'Data Architect',
     photo: '/img/people/LorinGaertner-200.jpg',
     bio: 'Lorin designs and implements solutions that improve data organization, maintenance, and delivery for clients.\n\nAt North Arrow Research he oversees the organization, maintenance, and delivery of client data. He designs, develops, and implements solutions to provide clients with better access to the data they need.',
-  }
-];
+  },
+]
 
 export default function PeoplePage(): ReactNode {
   return (
@@ -49,11 +49,7 @@ export default function PeoplePage(): ReactNode {
               </Link>
             </div>
             <div className={styles.heroContent}>
-              <img
-                src="/img/nar-logo.svg"
-                alt="North Arrow Research logo"
-                className={styles.heroLogo}
-              />
+              <img src="/img/nar-logo.svg" alt="North Arrow Research logo" className={styles.heroLogo} />
               <h1 className={styles.title}>A unique blend of scientific and technical expertise</h1>
             </div>
           </div>
@@ -74,5 +70,5 @@ export default function PeoplePage(): ReactNode {
         </div>
       </main>
     </Layout>
-  );
+  )
 }
