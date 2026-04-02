@@ -219,7 +219,7 @@ export default function Home(): ReactNode {
               <div>
                 <HeroLogo src="/img/nar-logo.svg" alt="North Arrow Research logo" />
                 <HeroTitle>North Arrow Research</HeroTitle>
-                <HeroSubtitle>Geospatial Software for conservation</HeroSubtitle>
+                <HeroSubtitle>Geospatial software for conservation</HeroSubtitle>
               </div>
             </HeroGrid>
           </HeroContainer>

@@ -9,19 +9,19 @@ const team = [
     name: 'Philip Bailey',
     role: 'Founder',
     photo: '/img/people/PhilipBailey.jpg',
-    bio: 'Philip is passionate about solving complex spatial problems and has spent over 27 years building research GIS applications and decision support systems.\n\nHe is adjunct professor in the Department of Watershed Sciences at Utah State University and has a PhD in GIS and remote sensing from the Department of Geography at the University of Southampton, UK. His joint bachelors was in Geography and Topographic Science from the Swansea University, Wales.',
+    bio: 'Philip is passionate about solving complex spatial problems and has spent over 27 years building GIS applications and decision support systems.\n\nHe is adjunct professor in the Department of Watershed Sciences at Utah State University and has a PhD in GIS and remote sensing from the Department of Geography at the University of Southampton, UK. His joint bachelors was in Geography and Topographic Science from Swansea University, Wales.',
   },
   {
     name: 'Matthew Reimer',
     role: 'System Architect',
     photo: '/img/people/MattReimer.jpeg',
-    bio: 'Matt is responsible for scaling our solutions to run in the cloud. He is the lead architect on all our projects both on the desktop and also using Amazon Web Services.\n\nMatt joined North Arrow Research in 2014, bringing a diverse background with a degree in physics and over a decade of experience in software and web development.',
+    bio: 'Matt is responsible for scaling our solutions to run in the cloud. He is the lead architect on all our projects both on the desktop and also using Amazon Web Services.\n\nMatt joined North Arrow Research in 2014, bringing a diverse background including a degree in physics and over a decade of experience in software and web development.',
   },
   {
     name: 'Kelly Whitehead',
     role: 'Geospatial Developer',
     photo: '/img/people/KellyWhitehead.png',
-    bio: 'Kelly leads geospatial algorithm development and has over a decade of experience creating custom geospatial software.\n\nKelly was the lead developer on the CHaMP Topographic Toolbar, an ArcGIS AddIn for processing high resolution surveys. He now leads our efforts geospatial algorithm development using open source GIS software.',
+    bio: 'Kelly leads geospatial algorithm development and has over 15 years of experience creating custom geospatial software.\n\nKelly was the lead developer on the CHaMP Topographic Toolbar, an ArcGIS AddIn for processing high resolution surveys. He now leads our efforts geospatial algorithm development using open source GIS software.',
   },
   {
     name: 'Lorin Gaertner',
@@ -41,9 +41,7 @@ const Hero = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  aspect-ratio: 2500 / 1667;
-  width: 100%;
-  max-height: 560px;
+  min-height: 56vh;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
