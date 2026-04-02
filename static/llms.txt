@@ -1,0 +1,26 @@
+# North Arrow Research
+
+> Geospatial software for conservation, river science and natural resource management.
+
+North Arrow Research is a geospatial software company that builds tools for conservation scientists, land managers and natural resource agencies. Founded by Philip Bailey, the company specializes in GIS applications, cloud-scale data processing and decision support systems for riverscapes and watershed science.
+
+## Products
+
+- [Riverscapes Data Exchange](https://data.riverscapes.net/): Store, curate, share and discover geospatial data related to rivers. Includes an interactive web mapping viewer.
+- [Cyber Castor](https://docs.riverscapes.net/products/cyber-castor): Provision and manage millions of parallel model runs in the cloud with job queuing and log management.
+- [Riverscapes Reports](https://reports.riverscapes.net/): Petabyte-scale reporting of river health across North America and New Zealand with professional graphics and tables.
+- [Cross Section Viewer](https://xsviewer.northarrowresearch.com/): Manage and visualize river transect data with areal, profile and longitudinal plots.
+- [INSTAR](https://instar.namc-usu.org/): Geospatial database and laboratory software for tracking taxonomic identification of macro invertebrate organisms.
+- [GCD](https://gcd.riverscapes.net/): Geomorphic Change Detection software for quantifying the difference between raster datasets while accounting for uncertainty.
+
+## Team
+
+- Philip Bailey — Founder. Over 27 years building research GIS applications. Adjunct professor at Utah State University with a PhD in GIS and remote sensing.
+- Matthew Reimer — System Architect. Lead architect for cloud and desktop solutions using Amazon Web Services.
+- Kelly Whitehead — Geospatial Developer. Over a decade of experience in custom geospatial software and algorithm development.
+- Lorin Gaertner — Data Architect. Designs and implements data organization, maintenance and delivery solutions.
+
+## Contact
+
+- Email: info@northarrowresearch.com
+- Website: https://northarrowresearch.com

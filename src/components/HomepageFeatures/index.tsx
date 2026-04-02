@@ -1,7 +1,6 @@
 import type { ComponentType, ComponentProps, ReactNode } from 'react'
-import clsx from 'clsx'
 import Heading from '@theme/Heading'
-import styles from './styles.module.css'
+import styled from '@emotion/styled'
 import SvgMountain from '@site/static/img/undraw_docusaurus_mountain.svg'
 import SvgTree from '@site/static/img/undraw_docusaurus_tree.svg'
 import SvgReact from '@site/static/img/undraw_docusaurus_react.svg'
@@ -45,11 +44,18 @@ const FeatureList: FeatureItem[] = [
   },
 ]
 
+const FeaturesSection = styled.section`
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+`
+
 function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className="col col--4">
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg style={{ height: 200, width: 200 }} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -61,7 +67,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
 
 export default function HomepageFeatures(): ReactNode {
   return (
-    <section className={styles.features}>
+    <FeaturesSection>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
@@ -69,6 +75,6 @@ export default function HomepageFeatures(): ReactNode {
           ))}
         </div>
       </div>
-    </section>
+    </FeaturesSection>
   )
 }
