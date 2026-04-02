@@ -14,11 +14,11 @@ const tools = [
       'Store, curate, share and discover geospatial data related to rivers. The exchange incorporates our WebViewer interactive web mapping interface for viewing data without the need for desktop GIS software. A minimal metadata standard is all that is required to make data compatible with the warehouse.',
   },
   {
-    name: 'Cyber Castor',
+    name: 'Cybercastor',
     image: '/img/products/cybercastor.png',
     href: 'https://docs.riverscapes.net/products/cyber-castor',
     description:
-      'Provision and manage millions of parallel  model runs. Cyber Castor handles job queuing, log file management and execution all cost-effectively and reliably performed in the cloud. Integrates with the Riverscapes Data Exchange to leverage existing data, or use APIs with external systems.',
+      'Provision and manage millions of parallel  model runs. Cybercastor handles job queuing, log file management and execution all cost-effectively and reliably performed in the cloud. Integrates with the Riverscapes Data Exchange to leverage existing data, or use APIs with external systems.',
   },
   {
     name: 'Riverscapes Reports',
