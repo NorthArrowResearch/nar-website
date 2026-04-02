@@ -11,10 +11,12 @@ const Page = styled.main`
 const Hero = styled.section`
   position: relative;
   background-image: url('/img/background2.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   aspect-ratio: 2500 / 1667;
+  width: 100%;
+  max-height: 560px;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
@@ -33,7 +35,7 @@ const Title = styled.h1`
   font-size: clamp(2rem, 5vw, 3.6rem);
   margin-bottom: 0.5rem;
   color: #ffffff;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
 `
 
 const LayoutGrid = styled.div`
@@ -145,7 +147,7 @@ export default function ContactPage(): ReactNode {
         <div className="container">
           <LayoutGrid>
             <Card>
-              <Form action="https://formspree.io/f/info@northarrowresearch.com" method="POST">
+              <Form action="https://formspree.io/f/mwvwnzrb" method="POST">
                 <FormRow>
                   <label>
                     <FieldLabel>First Name (required)</FieldLabel>
