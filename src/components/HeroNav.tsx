@@ -18,6 +18,7 @@ export const HeroTopLink = styled(Link)`
   color: #872175;
   font-size: 1.18rem;
   font-weight: 700;
+  padding-inline: 0.15rem;
   text-decoration: none;
   text-shadow: 0 1px 10px rgba(255, 255, 255, 0.8);
 

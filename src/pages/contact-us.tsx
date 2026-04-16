@@ -13,7 +13,7 @@ const Hero = styled.section`
   background-image: url('/img/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -500px;
   aspect-ratio: 2500 / 1667;
   width: 100%;
   max-height: 560px;
@@ -136,6 +136,7 @@ export default function ContactPage(): ReactNode {
             <HeroTopLinks as="nav" aria-label="Primary">
               <HeroTopLink to="/">Home</HeroTopLink>
               <HeroTopLink to="/people">People</HeroTopLink>
+              <HeroTopLink to="https://shop.northarrowresearch.com">Shop</HeroTopLink>
               <HeroTopLinkContact to="/contact-us">Contact Us</HeroTopLinkContact>
             </HeroTopLinks>
             <HeroContent>

@@ -213,6 +213,7 @@ export default function Home(): ReactNode {
           <HeroContainer className="container">
             <HeroTopLinks as="nav" aria-label="Primary">
               <HeroTopLink to="/people">People</HeroTopLink>
+              <HeroTopLink to="https://shop.northarrowresearch.com">Shop</HeroTopLink>
               <HeroTopLinkContact to="/contact-us">Contact Us</HeroTopLinkContact>
             </HeroTopLinks>
             <HeroGrid>
