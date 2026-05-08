@@ -20,18 +20,12 @@
   --ifm-font-family-base: 'Open Sans', 'Segoe UI', sans-serif;
   --ifm-heading-font-family: 'Open Sans', 'Segoe UI', sans-serif;
   --ifm-background-color: #ffffff;
-  --ifm-navbar-background-color: rgba(255, 255, 255, 0.96);
+  --ifm-navbar-background-color: transparent;
   --ifm-navbar-link-color: #872175;
   --ifm-footer-background-color: #efebe4;
   --ifm-footer-link-color: #3d3b37;
   --ifm-footer-title-color: #872175;
   --ifm-font-color-base: #252423;
-}
-
-.navbar__link,
-.navbar__link:hover,
-.navbar__link--active {
-  color: #872175;
 }
 
 h1,
@@ -44,13 +38,29 @@ h6 {
   letter-spacing: 0.01em;
 }
 
+h2 {
+  color: #872175;
+}
+
 .navbar {
-  display: none !important;
+  position: absolute;
+  width: 100%;
+  box-shadow: none;
+  border-bottom: none;
+  background: transparent !important;
+}
+
+.navbar__link,
+.navbar__link:hover,
+.navbar__link--active {
+  color: #872175;
+  text-shadow: none;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .navbar__title {
-  font-family: 'Open Sans', 'Segoe UI', sans-serif;
-  font-size: 1.5rem;
+  display: none;
 }
 
 .navbar__logo {

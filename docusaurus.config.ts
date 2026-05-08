@@ -85,13 +85,16 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      logo: {
-        alt: 'North Arrow Research logo',
-        src: 'img/nar-logo.svg',
-      },
+      // logo: {
+      //   alt: 'North Arrow Research logo',
+      //   src: 'img/nar-logo.svg',
+      // },
       items: [
-        { to: '/people', label: 'People', position: 'left' },
-        { to: '/contact-us', label: 'Contact Us', position: 'left' },
+        { to: '/', label: 'Home', position: 'right' },
+        { to: '/about', label: 'About', position: 'right' },
+        { to: '/people', label: 'People', position: 'right' },
+        { to: 'https://shop.northarrowresearch.com', label: 'Shop', position: 'right' },
+        { to: '/contact-us', label: 'Contact Us', position: 'right' },
       ],
     },
     footer: {
@@ -107,8 +110,16 @@ const config: Config = {
           ],
         },
         {
-          title: 'Company',
+          title: 'Pages',
           items: [
+            {
+              label: 'Home',
+              to: '/',
+            },
+            {
+              label: 'About',
+              to: '/about',
+            },
             {
               label: 'People',
               to: '/people',

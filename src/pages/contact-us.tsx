@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import Link from '@docusaurus/Link'
 import Layout from '@theme/Layout'
 import styled from '@emotion/styled'
-import { HeroTopLinks, HeroTopLink, HeroTopLinkContact, HeroLogo } from '../components/HeroNav'
+import { HeroLogo } from '../components/HeroNav'
 
 const Page = styled.main`
   padding: 0 0 4.2rem;
@@ -13,7 +13,7 @@ const Hero = styled.section`
   background-image: url('/img/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -500px;
+  background-position: center -400px;
   aspect-ratio: 2500 / 1667;
   width: 100%;
   max-height: 560px;
@@ -133,12 +133,6 @@ export default function ContactPage(): ReactNode {
       <Page>
         <Hero>
           <div className="container">
-            <HeroTopLinks as="nav" aria-label="Primary">
-              <HeroTopLink to="/">Home</HeroTopLink>
-              <HeroTopLink to="/people">People</HeroTopLink>
-              <HeroTopLink to="https://shop.northarrowresearch.com">Shop</HeroTopLink>
-              <HeroTopLinkContact to="/contact-us">Contact Us</HeroTopLinkContact>
-            </HeroTopLinks>
             <HeroContent>
               <HeroLogo src="/img/nar-logo.svg" alt="North Arrow Research logo" />
               <Title>Contact Us</Title>

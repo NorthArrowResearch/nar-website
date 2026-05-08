@@ -64,11 +64,11 @@ const HeroContainer = styled.div`
 `
 
 const HeroGrid = styled.div`
-  padding: 5.5rem 0 4.5rem;
+  padding: 9rem 0 4.5rem;
   max-width: 50rem;
 
   @media (max-width: 640px) {
-    padding: 3.8rem 0 3.1rem;
+    padding: 7rem 0 3.1rem;
   }
 `
 
@@ -211,11 +211,12 @@ export default function Home(): ReactNode {
       <main>
         <HeroSection>
           <HeroContainer className="container">
-            <HeroTopLinks as="nav" aria-label="Primary">
+            {/* <HeroTopLinks as="nav" aria-label="Primary">
+              <HeroTopLink to="/about">About</HeroTopLink>
               <HeroTopLink to="/people">People</HeroTopLink>
               <HeroTopLink to="https://shop.northarrowresearch.com">Shop</HeroTopLink>
               <HeroTopLinkContact to="/contact-us">Contact Us</HeroTopLinkContact>
-            </HeroTopLinks>
+            </HeroTopLinks> */}
             <HeroGrid>
               <div>
                 <HeroLogo src="/img/nar-logo.svg" alt="North Arrow Research logo" />

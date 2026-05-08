@@ -40,7 +40,7 @@ const Hero = styled.section`
   background-image: url('/img/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -400px;
+  background-position: center -300px;
   min-height: 56vh;
   display: flex;
   align-items: center;
@@ -143,12 +143,12 @@ export default function PeoplePage(): ReactNode {
       <Page>
         <Hero>
           <div className="container">
-            <HeroTopLinks as="nav" aria-label="Primary">
+            {/* <HeroTopLinks as="nav" aria-label="Primary">
               <HeroTopLink to="/">Home</HeroTopLink>
               <HeroTopLink to="/people">People</HeroTopLink>
               <HeroTopLink to="https://shop.northarrowresearch.com">Shop</HeroTopLink>
               <HeroTopLinkContact to="/contact-us">Contact Us</HeroTopLinkContact>
-            </HeroTopLinks>
+            </HeroTopLinks> */}
             <HeroContent>
               <HeroLogo src="/img/nar-logo.svg" alt="North Arrow Research logo" />
               <Title>A unique blend of scientific and technical expertise</Title>
