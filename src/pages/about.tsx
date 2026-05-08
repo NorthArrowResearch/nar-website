@@ -170,8 +170,9 @@ export default function AboutPage(): ReactNode {
             North Arrow Research was founded in 2012 by <Link to="/people">Philip Bailey</Link> with a clear and
             ambitious purpose: to help people solve complex geospatial challenges at scale.{' '}
             <Link to="/people">Matt Reimer</Link> joined shortly thereafter, bringing a wealth of experience in cloud
-            architecture and professional software development expertise. Kelly and Lorin joined later, both of whom
-            share a deep understanding of fundamental GIS principles and a passion for data management.
+            architecture and professional software development expertise. <Link to="/people">Kelly</Link> and{' '}
+            <Link to="/people">Lorin</Link> joined later, both of whom share a deep understanding of fundamental GIS
+            principles and a passion for data management.
           </p>
           <p>
             Fourteen years on, the original vision still drives everything we do. We are energized by clients with bold
