@@ -194,6 +194,12 @@ export default function AboutPage(): ReactNode {
               </StrengthCard>
             ))}
           </StrengthsGrid>
+
+          <h2>Where We Work</h2>
+          <p>
+            Most of our projects are in the United States, but we have worked with clients all around the world,
+            including in Canada, New Zealand, Scotland, France and Vietnam.
+          </p>
           <h2>Corporate Structure</h2>
           <p>
             North Arrow Research is a small company, incorporated in the province of British Columbia, Canada. We are
