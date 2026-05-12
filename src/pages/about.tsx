@@ -15,7 +15,7 @@ const strengths: { title: string; description: ReactNode }[] = [
           We build custom GIS software that scientists and resource managers actually use — ArcGIS Pro add-ins, QGIS
           plugins, and full-stack web mapping applications. Our <Link to="https://gcd.riverscapes.net">GCD</Link>{' '}
           software has been installed thousands of times worldwide and remains the standard tool for quantifying
-          riverbed change.
+          topographic and bathymetric change.
         </p>
         <br />
         <p>
@@ -88,7 +88,7 @@ const strengths: { title: string; description: ReactNode }[] = [
 const differentiators: { title: string; subtitle: string; description: string }[] = [
   {
     title: 'You talk to the engineer building it.',
-    subtitle: 'No hand-offs. No middlemen.',
+    subtitle: 'Hand-on. No middlemen.',
     description:
       'There are no sales staff or account managers at North Arrow Research. The person you meet in the first conversation is the person who designs and builds your solution. That means faster decisions, fewer misunderstandings, and software shaped by someone who cares about getting it right.',
   },
@@ -419,21 +419,20 @@ export default function AboutPage(): ReactNode {
               The science for protecting rivers, restoring watersheds, and managing aquatic ecosystems has never been
               more sophisticated. The challenge is building the tools and infrastructure to put that science to work —
               reliably, at scale, and in the hands of the people who need it most. That is what North Arrow Research has
-              spent over thirteen years doing.
+              spent over fourteen years doing.
             </IntroP>
             <IntroP>
               We partner with federal agencies, universities, and conservation organizations to build geospatial
               software that scientists trust, data platforms that grow from pilot to continental scale, and open tools
               that advance the whole field. We work exclusively in environmental conservation — not as a marketing
-              position, but because it is the work that matters to us. We have deliberately turned away business from
-              the resource extraction industry.
+              position, but because it is the work that matters to us.
             </IntroP>
           </Intro>
 
           {/* ── Facts ── */}
           <FactsStrip>
             <Fact>
-              <div className="number">13+</div>
+              <div className="number">14+</div>
               <div className="label">years of conservation software</div>
             </Fact>
             <Fact>
