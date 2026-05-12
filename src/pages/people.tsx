@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import Head from '@docusaurus/Head'
 import Layout from '@theme/Layout'
 import styled from '@emotion/styled'
-import { HeroTopLinks, HeroTopLink, HeroTopLinkContact, HeroLogo } from '../components/HeroNav'
+import { HeroLogo } from '../components/HeroNav'
 
 const team = [
   {
@@ -12,10 +12,10 @@ const team = [
     bio: 'Philip is passionate about solving complex spatial problems and has spent over 27 years building GIS applications and decision support systems.\n\nHe is adjunct professor in the Department of Watershed Sciences at Utah State University and has a PhD in GIS and remote sensing from the Department of Geography at the University of Southampton, UK. His joint bachelors was in Geography and Topographic Science from Swansea University, Wales.',
   },
   {
-    name: 'Matthew Reimer',
+    name: 'Matt Reimer',
     role: 'System Architect',
     photo: '/img/people/MattReimer.jpeg',
-    bio: 'Matt is responsible for scaling our solutions to run in the cloud. He is the lead architect on all our projects both on the desktop and also using Amazon Web Services.\n\nMatt joined North Arrow Research in 2014, bringing a diverse background including a degree in physics and over a decade of experience in software and web development.',
+    bio: "Matt architects the systems that connect scientists to their data; designing everything from QGIS desktop plugins for field analysis to the cloud-native Riverscapes Data Exchange platform and Cybercastor automation engine that makes geospatial datasets work at scale, discoverable and then shareable worldwide.\n\nHe joined North Arrow Research in 2014, bringing a physics degree and over a decade of software development experience. That foundation gives him a rare ability to reason from first principles - whether he's building low-level geospatial algorithms or high-throughput cloud infrastructure on Amazon Web Services.",
   },
   {
     name: 'Kelly Whitehead',
@@ -121,7 +121,7 @@ export default function PeoplePage(): ReactNode {
   return (
     <Layout
       title="People"
-      description="Meet the North Arrow Research team — geospatial software experts in conservation, river science, GIS and cloud architecture."
+      description="Meet the North Arrow Research team - geospatial software experts in conservation, river science, GIS and cloud architecture."
     >
       <Head>
         <script type="application/ld+json">

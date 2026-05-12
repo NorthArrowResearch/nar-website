@@ -47,16 +47,66 @@ h2 {
   width: 100%;
   box-shadow: none;
   border-bottom: none;
-  background: transparent !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.52) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ) !important;
 }
 
 .navbar__link,
-.navbar__link:hover,
 .navbar__link--active {
-  color: #872175;
-  text-shadow: none;
+  color: #ffffff;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.navbar__link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Mobile hamburger icon */
+.navbar__toggle {
+  color: #ffffff;
+}
+
+/* ── Mobile sidebar ──────────────────────────────────── */
+.navbar-sidebar {
+  background: #faf6f1 !important;
+}
+
+.navbar-sidebar__brand {
+  border-bottom: 1px solid #e5dfd4;
+}
+
+/* Nav items inside the drawer */
+.navbar-sidebar .menu__link {
+  color: #3c363b;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+}
+
+.navbar-sidebar .menu__link:hover {
+  color: #872175;
+  background: rgba(135, 33, 117, 0.06);
+}
+
+.navbar-sidebar .menu__link--active {
+  color: #872175;
+  background: rgba(135, 33, 117, 0.08);
+}
+
+/* Close button icon */
+.navbar-sidebar__close svg {
+  fill: #52514e;
+  stroke: #52514e;
+}
+
+.navbar-sidebar__close:hover svg {
+  fill: #3c363b;
+  stroke: #3c363b;
 }
 
 .navbar__title {
