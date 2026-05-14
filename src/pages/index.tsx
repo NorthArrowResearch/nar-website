@@ -16,7 +16,7 @@ const tools = [
   {
     name: 'Cybercastor',
     image: '/img/products/cybercastor.png',
-    href: 'https://docs.riverscapes.net/products/cyber-castor',
+    href: 'https://docs.riverscapes.net/products/cybercastor',
     description:
       'Provision and manage millions of parallel  model runs. Cybercastor handles job queuing, log file management and execution all cost-effectively and reliably performed in the cloud. Integrates with the Riverscapes Data Exchange to leverage existing data, or use APIs with external systems.',
   },
