@@ -124,6 +124,14 @@ const Links = styled.nav`
   }
 `
 
+const MapEmbed = styled.iframe`
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 0.42rem;
+  margin-top: 0.8rem;
+`
+
 export default function ContactPage(): ReactNode {
   return (
     <Layout
@@ -168,12 +176,21 @@ export default function ContactPage(): ReactNode {
             <Sidebar>
               <h2>North Arrow Research</h2>
               <p>
-                <a href="mailto:info@northarrowresearch.com">info@northarrowresearch.com</a>
+                Email: <a href="mailto:info@northarrowresearch.com">info@northarrowresearch.com</a>
               </p>
-              <Links>
+              {/* <Links>
                 <Link to="/people">People</Link>
                 <Link to="/">Home</Link>
-              </Links>
+              </Links> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d333310.04773735726!2d-123.123904!3d49.257735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sus!4v1778729544070!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </Sidebar>
           </LayoutGrid>
         </div>

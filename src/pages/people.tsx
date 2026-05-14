@@ -10,24 +10,32 @@ const team = [
     role: 'Founder',
     photo: '/img/people/PhilipBailey.jpg',
     bio: 'Philip is passionate about solving complex spatial problems and has spent over 27 years building GIS applications and decision support systems.\n\nHe is adjunct professor in the Department of Watershed Sciences at Utah State University and has a PhD in GIS and remote sensing from the Department of Geography at the University of Southampton, UK. His joint bachelors was in Geography and Topographic Science from Swansea University, Wales.',
+    git: 'https://github.com/philipbaileynar',
+    linkedin: 'https://www.linkedin.com/in/philip-bailey-5b759564/',
   },
   {
     name: 'Matt Reimer',
     role: 'System Architect',
     photo: '/img/people/MattReimer.jpeg',
     bio: "Matt architects the systems that connect scientists to their data; designing everything from QGIS desktop plugins for field analysis to the cloud-native Riverscapes Data Exchange platform and Cybercastor automation engine that makes geospatial datasets work at scale, discoverable and then shareable worldwide.\n\nHe joined North Arrow Research in 2014, bringing a physics degree and over a decade of software development experience. That foundation gives him a rare ability to reason from first principles - whether he's building low-level geospatial algorithms or high-throughput cloud infrastructure on Amazon Web Services.",
+    git: 'https://github.com/mattreimer',
+    linkedin: 'https://www.linkedin.com/in/raychaser/',
   },
   {
     name: 'Kelly Whitehead',
     role: 'Geospatial Developer',
     photo: '/img/people/KellyWhitehead.png',
     bio: 'Kelly leads geospatial algorithm development and has over 15 years of experience creating custom geospatial software.\n\nKelly was the lead developer on the CHaMP Topographic Toolbar, an ArcGIS AddIn for processing high resolution surveys. He now leads our efforts geospatial algorithm development using open source GIS software.',
+    git: 'https://github.com/KellyMWhitehead',
+    linkedin: 'https://www.linkedin.com/in/kellymwhitehead/',
   },
   {
     name: 'Lorin Gaertner',
     role: 'Data Architect',
     photo: '/img/people/LorinGaertner-200.jpg',
     bio: 'Lorin designs and implements solutions that improve data organization, maintenance, and delivery for clients.\n\nAt North Arrow Research he oversees the organization, maintenance, and delivery of client data. He designs, develops, and implements solutions to provide clients with better access to the data they need.',
+    git: 'https://github.com/weblorin',
+    linkedin: 'https://www.linkedin.com/in/loringaertner/',
   },
 ]
 
@@ -92,6 +100,13 @@ const Card = styled.article`
   }
 `
 
+const PhotoCol = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+`
+
 const Photo = styled.img`
   width: 108px;
   height: 108px;
@@ -102,6 +117,16 @@ const Photo = styled.img`
   @media (max-width: 560px) {
     width: 100%;
     height: 220px;
+  }
+`
+
+const SocialLinks = styled.div`
+  display: flex;
+  gap: 0.4rem;
+
+  a img {
+    width: 18px;
+    height: 18px;
   }
 `
 
@@ -159,7 +184,31 @@ export default function PeoplePage(): ReactNode {
           <Grid>
             {team.map((person) => (
               <Card key={person.name}>
-                <Photo src={person.photo} alt={person.name} />
+                <PhotoCol>
+                  <Photo src={person.photo} alt={person.name} />
+                  <SocialLinks>
+                    {person.git && (
+                      <a
+                        href={person.git}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${person.name} GitHub`}
+                      >
+                        <img src="/img/github.svg" alt="GitHub" width={50} height={50} />
+                      </a>
+                    )}
+                    {person.linkedin && (
+                      <a
+                        href={person.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${person.name} LinkedIn`}
+                      >
+                        <img src="/img/linkedin.svg" alt="LinkedIn" width={50} height={50} />
+                      </a>
+                    )}
+                  </SocialLinks>
+                </PhotoCol>
                 <div>
                   <h2>{person.name}</h2>
                   <Role>{person.role}</Role>
