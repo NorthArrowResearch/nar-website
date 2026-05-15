@@ -131,6 +131,10 @@ const config: Config = {
               label: 'Contact Us',
               to: '/contact-us',
             },
+            {
+              label: 'Shop',
+              href: 'https://shop.northarrowresearch.com',
+            },
           ],
         },
       ],

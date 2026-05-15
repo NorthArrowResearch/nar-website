@@ -48,14 +48,24 @@ const Hero = styled.section`
   background-image: url('/img/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -300px;
+  background-position: center;
   min-height: 56vh;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
+    pointer-events: none;
+  }
 `
 
 const HeroContent = styled.div`
+  position: relative;
+  z-index: 1;
   padding: 5.5rem 0 4.5rem;
   max-width: 50rem;
 
