@@ -50,6 +50,8 @@ const tools = [
   },
 ]
 
+// ─── Styled components ─────────────────────────────────────────────────────────
+
 const HeroSection = styled.section`
   background: url('/img/home-background.jpeg') center / cover no-repeat;
   border-bottom: 1px solid #d5d0c8;
@@ -57,10 +59,19 @@ const HeroSection = styled.section`
   position: relative;
   display: flex;
   align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.65) 100%);
+    pointer-events: none;
+  }
 `
 
 const HeroContainer = styled.div`
-  position: static;
+  position: relative;
+  z-index: 1;
 `
 
 const HeroGrid = styled.div`
@@ -86,6 +97,8 @@ const HeroSubtitle = styled.p`
   font-size: clamp(1.02rem, 2.2vw, 1.48rem);
   color: #ffffff;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  max-width: 42rem;
+  line-height: 1.55;
 `
 
 const ToolsSection = styled.section`
@@ -146,6 +159,7 @@ const ToolImage = styled.img`
   aspect-ratio: 16 / 9;
   border-radius: 0.5rem;
   object-fit: cover;
+  object-position: top;
   border: 1px solid #e8e3da;
   background: #f8f4ef;
 `
@@ -162,6 +176,7 @@ const LearnMore = styled(Link)`
 
 const ClientsSection = styled.section`
   background: #ffffff;
+  border-top: 1px solid #e8e3da;
   padding: 4rem 0;
 
   @media (max-width: 640px) {
@@ -186,6 +201,8 @@ const ClientRibbonImage = styled.img`
   background: #fff;
 `
 
+// ─── Page component ────────────────────────────────────────────────────────────
+
 export default function Home(): ReactNode {
   return (
     <Layout
@@ -209,20 +226,13 @@ export default function Home(): ReactNode {
         </script>
       </Head>
       <main>
+        {/* ── Hero ── */}
         <HeroSection>
           <HeroContainer className="container">
-            {/* <HeroTopLinks as="nav" aria-label="Primary">
-              <HeroTopLink to="/about">About</HeroTopLink>
-              <HeroTopLink to="/people">People</HeroTopLink>
-              <HeroTopLink to="https://shop.northarrowresearch.com">Shop</HeroTopLink>
-              <HeroTopLinkContact to="/contact-us">Contact Us</HeroTopLinkContact>
-            </HeroTopLinks> */}
             <HeroGrid>
-              <div>
-                <HeroLogo src="/img/nar-logo.svg" alt="North Arrow Research logo" />
-                <HeroTitle>North Arrow Research</HeroTitle>
-                <HeroSubtitle>Geospatial software for conservation</HeroSubtitle>
-              </div>
+              <HeroLogo src="/img/nar-logo.svg" alt="North Arrow Research logo" />
+              <HeroTitle>North Arrow Research</HeroTitle>
+              <HeroSubtitle>Geospatial software for conservation.</HeroSubtitle>
             </HeroGrid>
           </HeroContainer>
         </HeroSection>
@@ -245,6 +255,7 @@ export default function Home(): ReactNode {
           </div>
         </ToolsSection>
 
+        {/* ── Clients ── */}
         <ClientsSection>
           <div className="container">
             <SectionTitle>Our Clients</SectionTitle>

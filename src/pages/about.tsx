@@ -31,9 +31,9 @@ const strengths: { title: string; description: ReactNode }[] = [
     description: (
       <>
         <p>
-          We design AWS systems that are right-sized for science — not over-engineered, not expensive to run, and not
-          dependent on a dedicated ops team to stay healthy. Conservation organizations shouldn&apos;t need an IT
-          department to operate world-class infrastructure.
+          We design cloud computing systems that are right-sized for science — not over-engineered, not expensive to
+          run, and not dependent on a dedicated ops team to stay healthy. Conservation organizations shouldn&apos;t need
+          an IT department to operate world-class infrastructure.
         </p>
         <br />
         <p>
