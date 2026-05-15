@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link'
 import Head from '@docusaurus/Head'
 import Layout from '@theme/Layout'
 import styled from '@emotion/styled'
-import { HeroTopLinks, HeroTopLink, HeroTopLinkContact, HeroLogo } from '../components/HeroNav'
+import { HeroLogo } from '../components/HeroNav'
 
 const tools = [
   {
@@ -15,10 +15,10 @@ const tools = [
   },
   {
     name: 'Cybercastor',
-    image: '/img/products/cybercastor.png',
+    image: '/img/products/Cybercastor-Screenshot.png',
     href: 'https://docs.riverscapes.net/products/cybercastor',
     description:
-      'Provision and manage millions of parallel  model runs. Cybercastor handles job queuing, log file management and execution all cost-effectively and reliably performed in the cloud. Integrates with the Riverscapes Data Exchange to leverage existing data, or use APIs with external systems.',
+      'Provision and manage millions of parallel model runs. Cybercastor handles job queuing, log file management and execution all cost-effectively and reliably performed in the cloud. Integrates with the Riverscapes Data Exchange to leverage existing data, or use APIs with external systems.',
   },
   {
     name: 'Riverscapes Reports',
@@ -94,11 +94,83 @@ const HeroTitle = styled.h1`
 
 const HeroSubtitle = styled.p`
   margin: 1.2rem 0 0;
-  font-size: clamp(1.02rem, 2.2vw, 1.48rem);
+  font-size: clamp(1.02rem, 2.2vw, 1.35rem);
   color: #ffffff;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
   max-width: 42rem;
   line-height: 1.55;
+`
+
+const WhoSection = styled.section`
+  padding: 4rem 0;
+  background: #ffffff;
+
+  @media (max-width: 640px) {
+    padding: 2.8rem 0;
+  }
+`
+
+const WhoText = styled.p`
+  max-width: 52rem;
+  margin: 0 auto 2rem;
+  text-align: left;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #3c363b;
+`
+
+const WhoLink = styled(Link)`
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  color: #0f5f7f;
+  font-size: 0.97rem;
+  margin: 0 auto 2rem;
+  max-width: 52rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
+const ServicesSection = styled.section`
+  background: #f4f0ea;
+  padding: 4rem 0;
+
+  @media (max-width: 640px) {
+    padding: 2.8rem 0;
+  }
+`
+
+const ServicesGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+const ServiceCard = styled.article`
+  background: #ffffff;
+  border-radius: 0.62rem;
+  padding: 1.5rem;
+  border: 1px solid #e0d9d0;
+  border-top: 3px solid #872175;
+
+  h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.1rem;
+    color: #3c363b;
+  }
+
+  p {
+    margin: 0;
+    color: #52514e;
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
 `
 
 const ToolsSection = styled.section`
@@ -201,13 +273,52 @@ const ClientRibbonImage = styled.img`
   background: #fff;
 `
 
+const CTABand = styled.section`
+  background: linear-gradient(135deg, #1a0a18 0%, #2d1040 100%);
+  padding: 4rem 0;
+  text-align: center;
+
+  h2 {
+    margin: 0 0 0.65rem;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    color: #fff;
+  }
+
+  p {
+    color: #d8cde0;
+    font-size: 1.05rem;
+    max-width: 38rem;
+    margin: 0 auto 1.5rem;
+    line-height: 1.65;
+  }
+`
+
+const CTAButton = styled(Link)`
+  display: inline-block;
+  background: #872175;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.45rem;
+  text-decoration: none !important;
+  transition:
+    background 0.15s ease,
+    transform 0.1s ease;
+
+  &:hover {
+    background: #a02a8a;
+    transform: translateY(-1px);
+  }
+`
+
 // ─── Page component ────────────────────────────────────────────────────────────
 
 export default function Home(): ReactNode {
   return (
     <Layout
       title="North Arrow Research"
-      description="North Arrow Research builds geospatial software for conservation, river science and natural resource management. Explore our products, team and client work."
+      description="North Arrow Research builds geospatial tools for conservation, river science and natural resource management. Explore our products, team and client work."
     >
       <Head>
         <script type="application/ld+json">
@@ -232,14 +343,61 @@ export default function Home(): ReactNode {
             <HeroGrid>
               <HeroLogo src="/img/nar-logo.svg" alt="North Arrow Research logo" />
               <HeroTitle>North Arrow Research</HeroTitle>
-              <HeroSubtitle>Geospatial software for conservation.</HeroSubtitle>
+              <HeroSubtitle>Geospatial tools and expertise for conservation at any scale.</HeroSubtitle>
             </HeroGrid>
           </HeroContainer>
         </HeroSection>
 
+        {/* ── Who We Are ── */}
+        <WhoSection>
+          <div className="container">
+            <SectionTitle>Who We Are</SectionTitle>
+            <WhoText>
+              North Arrow Research is a small, specialist firm based in British Columbia, Canada, with over 14 years
+              building geospatial software exclusively for environmental conservation. We partner with federal agencies,
+              universities, and NGOs to deliver tools and infrastructure that scientists trust and practitioners rely on
+              &mdash; from a researcher&apos;s laptop to continental-scale cloud platforms.
+            </WhoText>
+            <WhoLink to="/about">Learn more about us →</WhoLink>
+          </div>
+        </WhoSection>
+
+        {/* ── Services ── */}
+        <ServicesSection>
+          <div className="container">
+            <SectionTitle>What We Do For You</SectionTitle>
+            <ServicesGrid>
+              <ServiceCard>
+                <h3>Custom Geospatial Software</h3>
+                <p>
+                  ArcGIS Pro add-ins, QGIS plugins, and full-stack web mapping applications built around your science
+                  workflow — from single-researcher field tools to continental-scale analysis platforms.
+                </p>
+              </ServiceCard>
+              <ServiceCard>
+                <h3>Cloud Architecture &amp; Automation</h3>
+                <p>
+                  Cloud systems sized for science — not over-engineered, not expensive to run. We design parallel model
+                  execution pipelines, data warehouses, and automated workflows that don&apos;t require a dedicated ops
+                  team.
+                </p>
+              </ServiceCard>
+              <ServiceCard>
+                <h3>Data Architecture &amp; Management</h3>
+                <p>
+                  Geospatial databases built to last, optimized for your science and not shaped by arbitrary software
+                  constraints. PostgreSQL/PostGIS, DynamoDB, GraphQL APIs, and purpose-built data models designed for
+                  longevity and discoverability.
+                </p>
+              </ServiceCard>
+            </ServicesGrid>
+          </div>
+        </ServicesSection>
+
+        {/* ── Tools ── */}
         <ToolsSection>
           <div className="container">
-            <SectionTitle>Our Products</SectionTitle>
+            <SectionTitle>Our Tools &amp; Platforms</SectionTitle>
             <ToolsGrid>
               {tools.map((tool) => (
                 <ToolCard key={tool.name}>
@@ -278,6 +436,18 @@ export default function Home(): ReactNode {
             </ClientRibbons>
           </div>
         </ClientsSection>
+
+        {/* ── CTA ── */}
+        <CTABand>
+          <div className="container">
+            <h2>Have a project in mind?</h2>
+            <p>
+              Whether you&apos;re ready to scope a solution or just beginning to think through your options, we&apos;d
+              love to hear what you&apos;re working on.
+            </p>
+            <CTAButton to="/contact-us">Get in touch →</CTAButton>
+          </div>
+        </CTABand>
       </main>
     </Layout>
   )
