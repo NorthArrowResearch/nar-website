@@ -88,7 +88,7 @@ const strengths: { title: string; description: ReactNode }[] = [
 const differentiators: { title: string; subtitle: string; description: string }[] = [
   {
     title: 'You talk to the engineer building it.',
-    subtitle: 'Hand-on. No middlemen.',
+    subtitle: 'Hands-on. No middlemen.',
     description:
       'There are no sales staff or account managers at North Arrow Research. The person you meet in the first conversation is the person who designs and builds your solution. That means faster decisions, fewer misunderstandings, and software shaped by someone who cares about getting it right.',
   },
