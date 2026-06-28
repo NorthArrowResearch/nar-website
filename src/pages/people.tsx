@@ -33,7 +33,7 @@ const team = [
     name: 'Lorin Gaertner',
     role: 'Data Architect',
     photo: '/img/people/LorinGaertner-200.jpg',
-    bio: 'Lorin designs and implements solutions that improve data organization, maintenance, and delivery for clients.\n\nAt North Arrow Research he oversees the organization, maintenance, and delivery of client data. He designs, develops, and implements solutions to provide clients with better access to the data they need.',
+    bio: 'Lorin turns massive geospatial complexity into seamless client delivery. He specializes in building the robust pipelines, quality control frameworks, and cloud architecture that make complex data trustworthy and highly accessible.\n\nAt North Arrow Research, he builds and scales the in-house data lakehouse that centralizes billions of discrete riverscape data points built from thousands of model runs. To maximize the value of this data, Lorin designs advanced metadata systems that track lineage and power custom, automated reporting tools -- allowing clients to extract business intelligence in whatever format they need.',
     git: 'https://github.com/weblorin',
     linkedin: 'https://www.linkedin.com/in/loringaertner/',
   },
