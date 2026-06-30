@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import Link from '@docusaurus/Link'
+// import Link from '@docusaurus/Link'
 import Layout from '@theme/Layout'
 import styled from '@emotion/styled'
 import { HeroLogo } from '../components/HeroNav'
@@ -125,22 +125,22 @@ const Button = styled.button`
   cursor: pointer;
 `
 
-const Links = styled.nav`
-  display: grid;
-  gap: 0.55rem;
+// const Links = styled.nav`
+//   display: grid;
+//   gap: 0.55rem;
 
-  a {
-    color: #0f5f7f;
-  }
-`
+//   a {
+//     color: #0f5f7f;
+//   }
+// `
 
-const MapEmbed = styled.iframe`
-  width: 100%;
-  height: 220px;
-  border: 0;
-  border-radius: 0.42rem;
-  margin-top: 0.8rem;
-`
+// const MapEmbed = styled.iframe`
+//   width: 100%;
+//   height: 220px;
+//   border: 0;
+//   border-radius: 0.42rem;
+//   margin-top: 0.8rem;
+// `
 
 export default function ContactPage(): ReactNode {
   return (

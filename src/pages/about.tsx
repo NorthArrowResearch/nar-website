@@ -473,7 +473,7 @@ export default function AboutPage(): ReactNode {
             {strengths.map((s) => (
               <StrengthCard key={s.title}>
                 <h3>{s.title}</h3>
-                <p>{s.description}</p>
+                {s.description}
               </StrengthCard>
             ))}
           </StrengthsGrid>
