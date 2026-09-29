@@ -256,21 +256,52 @@ const ClientsSection = styled.section`
   }
 `
 
-const ClientRibbons = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+const ClientLogosGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
   align-items: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 340px) {
+    grid-template-columns: 1fr;
+  }
 `
 
-const ClientRibbonImage = styled.img`
+const ClientLogosSecondRow = styled.div`
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
   width: 100%;
-  max-width: 65rem;
-  height: auto;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+const ClientLogoImage = styled.img`
+  height: 100px;
+  width: auto;
+  max-width: 100%;
   display: block;
-  margin: 0 auto;
-  border-radius: 0.62rem;
-  background: #fff;
 `
 
 const CTABand = styled.section`
@@ -417,23 +448,22 @@ export default function Home(): ReactNode {
         <ClientsSection>
           <div className="container">
             <SectionTitle>Our Clients</SectionTitle>
-            <ClientRibbons>
-              <ClientRibbonImage
-                src="/img/clients/logos1.png"
-                alt="Client logos including Bureau of Land Management, US Forest Service, and NOAA"
-                loading="lazy"
-              />
-              <ClientRibbonImage
-                src="/img/clients/logos2.png"
-                alt="Client logos including Utah State University and US Fish and Wildlife Service"
-                loading="lazy"
-              />
-              <ClientRibbonImage
-                src="/img/clients/logos3.png"
-                alt="Additional client and partner logos"
-                loading="lazy"
-              />
-            </ClientRibbons>
+            <ClientLogosGrid>
+              <ClientLogoImage src="/img/clients/usu.svg" alt="Utah State University" loading="lazy" />
+              <ClientLogoImage src="/img/clients/namc.svg" alt="North American Management Center" loading="lazy" />
+              <ClientLogoImage src="/img/clients/auckland.svg" alt="University of Auckland" loading="lazy" />
+              <ClientLogoImage src="/img/clients/noaa.webp" alt="NOAA" loading="lazy" />
+            </ClientLogosGrid>
+            <ClientLogosSecondRow>
+              <ClientLogoImage src="/img/clients/bpa.svg.webp" alt="Bonneville Power Administration" loading="lazy" />
+              <ClientLogoImage src="/img/clients/usace.svg" alt="US Army Corps of Engineers" loading="lazy" />
+              <ClientLogoImage src="/img/clients/usfs.svg.webp" alt="US Forest Service" loading="lazy" />
+              <ClientLogoImage src="/img/clients/usgs.svg.webp" alt="USGS" loading="lazy" />
+            </ClientLogosSecondRow>
+            <ClientLogosSecondRow>
+              <ClientLogoImage src="/img/clients/nasa.svg" alt="NASA" loading="lazy" />
+              <ClientLogoImage src="/img/clients/blm.svg.webp" alt="Bureau of Land Management" loading="lazy" />
+            </ClientLogosSecondRow>
           </div>
         </ClientsSection>
 
