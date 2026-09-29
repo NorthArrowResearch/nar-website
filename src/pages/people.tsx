@@ -21,14 +21,14 @@ const team = [
     git: 'https://github.com/mattreimer',
     linkedin: 'https://www.linkedin.com/in/raychaser/',
   },
-  {
-    name: 'Kelly Whitehead',
-    role: 'Geospatial Developer',
-    photo: '/img/people/KellyWhitehead.png',
-    bio: 'Kelly leads geospatial algorithm development and has over 15 years of experience creating custom geospatial software.\n\nKelly was the lead developer on the CHaMP Topographic Toolbar, an ArcGIS AddIn for processing high resolution surveys. He now leads our efforts geospatial algorithm development using open source GIS software.',
-    git: 'https://github.com/KellyMWhitehead',
-    linkedin: 'https://www.linkedin.com/in/kellymwhitehead/',
-  },
+  // {
+  //   name: 'Kelly Whitehead',
+  //   role: 'Geospatial Developer',
+  //   photo: '/img/people/KellyWhitehead.png',
+  //   bio: 'Kelly leads geospatial algorithm development and has over 15 years of experience creating custom geospatial software.\n\nKelly was the lead developer on the CHaMP Topographic Toolbar, an ArcGIS AddIn for processing high resolution surveys. He now leads our efforts geospatial algorithm development using open source GIS software.',
+  //   git: 'https://github.com/KellyMWhitehead',
+  //   linkedin: 'https://www.linkedin.com/in/kellymwhitehead/',
+  // },
   {
     name: 'Lorin Gaertner',
     role: 'Data Architect',
